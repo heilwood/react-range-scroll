@@ -29,7 +29,6 @@ class Range extends React.Component<IProps> {
     min: 0,
     max: 100
   };
-  
   trackRef = React.createRef<HTMLElement>();
   schdOnMouseMove: (e: MouseEvent) => void;
   schdOnTouchMove: (e: TouchEvent) => void;
