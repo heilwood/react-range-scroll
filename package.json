@@ -1,6 +1,6 @@
 {
-  "name": "react-range",
-  "version": "1.4.6",
+  "name": "react-range-scroll",
+  "version": "1.4.8",
   "description": "Range input. Slides in all directions.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tajo/react-range"
+    "url": "git+https://github.com/heilwood/react-range.git"
   },
   "author": "Vojtech Miksu <vojtech@miksu.cz>",
   "license": "MIT",
@@ -92,5 +92,13 @@
       "node"
     ],
     "preset": "jest-puppeteer"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/heilwood/react-range/issues"
+  },
+  "homepage": "https://github.com/heilwood/react-range#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {}
 }
