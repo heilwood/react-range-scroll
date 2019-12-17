@@ -153,6 +153,7 @@ class Range extends React.Component<IProps> {
   addTouchEvents = (e: TouchEvent) => {
     if (e.cancelable) {
       e.preventDefault();
+      e.stopPropagation();
    }
     document.addEventListener('touchmove', this.schdOnTouchMove, {
       passive: false
@@ -162,7 +163,10 @@ class Range extends React.Component<IProps> {
   };
 
   addMouseEvents = (e: MouseEvent) => {
-    e.preventDefault();
+    if (e.cancelable) {
+      e.preventDefault();
+      e.stopPropagation();
+   }
     document.addEventListener('mousemove', this.schdOnMouseMove);
     document.addEventListener('mouseup', this.schdOnEnd);
   };
