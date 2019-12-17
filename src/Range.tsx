@@ -151,7 +151,9 @@ class Range extends React.Component<IProps> {
     );
 
   addTouchEvents = (e: TouchEvent) => {
-    e.preventDefault();
+    if (e.cancelable) {
+      e.preventDefault();
+   }
     document.addEventListener('touchmove', this.schdOnTouchMove, {
       passive: false
     });
